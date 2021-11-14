@@ -1,0 +1,289 @@
+@import url(public.css);
+
+/* header start */
+#top{
+    height: 40px;
+    background: #fff;
+    border-bottom: 1px solid #f5f5f5;
+}
+#top .container{
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /*两端对齐*/
+}
+
+#top .left{
+    position: relative;
+}
+
+#top .logo{
+    margin:0 20px;
+    position: relative;
+    z-index: 4;
+}
+
+#top .left span a{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 3px 3px;
+    border-bottom: 1px solid #eee;
+    display: none;
+    z-index: 3;
+}
+#top .left span:hover a{
+    display: block;
+}
+
+#top .right{
+    position: relative;
+    display: flex;
+}
+#top .right h3{
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #464646;
+}
+#top .right h3 a{
+    color: #464646;
+}
+#top .right h3 a:hover{
+    color: #ff4e00;
+}
+
+#top h3.text1{
+    margin-right: 20px;
+    padding-left: 30px;
+}
+#top h3.text1::before{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../images/ico_01.png) -30px 0;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+#top h3.text2{
+    padding-right: 30px;
+    cursor: pointer;
+}
+#top h3.text2::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: url(../images/ico_01.png);
+    position: absolute;
+    right: 0;
+    top: 5px;
+    opacity: .1;
+    transform: rotate(90deg);
+}
+
+#top .right iframe{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: none;
+    width: 708px;
+    height: 582px;
+    z-index: 4;
+}
+#top h3.text2:hover iframe{
+    display: block;
+}
+/* header end*/
+
+
+/* nav start */
+#nav{
+    height: 134px;
+    background: url(../images/nav_bg.png) center no-repeat;
+    position: relative;
+}
+#nav .nav1{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+#nav .title{
+    display: flex;
+    margin-right: 40px;
+}
+#nav .title a{
+    margin: 6px 20px 0 0;
+}
+#nav .title h1{
+    margin-top: 28px;
+    font-size: 24px;
+    position: relative;
+    color: #ffb400;
+}
+#nav .title h1 span{
+    font-size: 14px;
+    color:#fff;
+    display: block;
+    font-weight: normal;
+    margin-top: 2px;
+}
+#nav .title h1::after{
+    content: "";
+    width: 69px;
+    height: 19px;
+    position: absolute;
+    top: 8px;
+    right: -16px;
+    background: url(../images/new_version.png);
+}
+
+#nav .nav1 ul{
+    display: flex;
+}
+#nav .nav1 ul a{
+    display: block;
+    width: 102px;
+    height: 102px;
+    text-align: center;
+    line-height: 102px;
+    color: #fff;
+}
+#nav .nav1 ul li a:hover{
+    color: #ffb400;
+}
+#nav .nav1 ul li:last-child a{
+    color:#ffb400;
+    text-decoration: underline;
+}
+
+#nav .nav1 .login{
+    position: absolute;
+    width: 126px;
+    height: 100px;
+    right:-120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav .nav1 .login > span{
+    width: 46px;
+    height: 45px;
+    background: url(../images/dia-login-head.png) no-repeat;
+    cursor: pointer;
+}
+#nav .nav1 .login p{
+    color: #fff;
+}
+#nav .nav1 .login p span{
+    color: #ffb400;
+    cursor: pointer;
+}
+
+/* 当#nav hover的时候显示.nav2 */
+#nav:hover .nav2{
+    height: 400px;
+}
+
+#nav .nav2{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s ease;
+}
+
+#nav .nav2>ul{
+    width: 1100px;
+    margin: 115px auto 0;
+    display: flex;
+    position: relative;
+    left: 300px;
+}
+#nav .nav2 li li{
+    width: 106px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+}
+#nav .nav2 a{
+    color: #fff;
+}
+#nav .nav2 a:hover{
+    color:#ffb400;
+}
+#nav .nav2 .new::before, #nav .nav2 .hot::before{
+    content: "N";
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    background: #f31419;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    top:12px;
+    left:3px;
+}
+
+#nav .nav2 .hot::before{
+    content: "H";
+    left: 10px;
+    top:11px;
+}
+#nav .nav2>ul li:nth-child(2) li:last-child::before{
+    /* 第二列最后一个li */
+    left: -3px;
+}
+#nav .nav2>ul li:nth-child(4) li:first-child::before{
+    /* 第四列第一个li */
+    left: -10px;
+}
+#nav .nav2>ul li:nth-child(5) li:nth-child(3):before{
+    /* 第五列第3个li */
+    left: 3px;
+}
+#nav .contact span{
+    display: none;
+    width: 132px;
+    padding:6px;
+    background: #fff;
+    position: absolute;
+    left: -158px;
+}
+#nav .contact span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    transform: rotate(45deg);
+    right: -5px;
+    top:15px;
+}
+#nav .contact img{
+    width: 100%;
+}
+#nav .contact li span{
+    top: 0;
+    right:30px;
+}
+#nav .contact li:nth-child(3) span{
+    background: #f0f0f0;
+}
+#nav .contact li:hover span{
+    display: block;
+}
+/* nav end */

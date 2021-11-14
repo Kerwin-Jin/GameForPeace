@@ -1,0 +1,28 @@
+body,h1,h2,h3,h4,dl,dd,p{
+    margin: 0;
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;/* 将图片的缝隙去掉  */
+}
+
+button{
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    background: #f4f4f4;
+}

@@ -26,3 +26,45 @@ button{
 body{
     background: #f4f4f4;
 }
+
+/* 登录弹窗公共样式 */
+.dialog{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: none;
+}
+.dialog.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog .wrap{
+    position: relative;
+}
+.dialog .wrap h3{
+    font-size: 24px;
+    line-height: 42px;
+    color:#fffeef;
+    text-align: center;
+}
+.dialog .close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    background: url(../images/dia-login-close.png) no-repeat center;
+}
+
+
+/* 轮播图公共样式 */
+.carousel{
+    position: relative;
+    overflow: hidden;
+}

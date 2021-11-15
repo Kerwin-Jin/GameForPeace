@@ -287,3 +287,78 @@
     display: block;
 }
 /* nav end */
+#loginBox .wrap{
+    width: 634px;
+    height: 327px;
+    background: url(../images/dia-login-bg.png) no-repeat center;
+}
+#loginBox .wrap .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+#loginBox .btn a{
+    width: 130px;
+    height: 164px;
+    font-size: 0;
+    margin: 0 40px;
+}
+#loginBox .btn a:nth-child(1){
+    background: url(../images/dia-login-qq.png) no-repeat center;
+}
+#loginBox .btn a:nth-child(2){
+    background: url(../images/dia-login-wx.png) no-repeat center;
+}
+
+#bg1{
+    height: 650px;
+    background: #fff url(../images/bg_01.jpg) no-repeat center;
+    margin-top: -134px;
+}
+#banner{
+    height: 562px;
+    padding-top: 20px;
+    background: #fff url(../images/bg_02.jpg) no-repeat center;
+}
+#banner .container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+#banner .tip{
+    width: 119px;
+    height: 154px;
+    background: url(../images/year-btn.png) no-repeat center;
+    position: absolute;
+    left: -135px;
+    top:0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#banner .top{
+    display: flex;
+    height: 320px;
+}
+#banner .download{
+    width: 180px;
+    background: url(../images/down_bg.png) no-repeat center;
+    text-align: center;
+}
+#banner .download h3{
+    font-size: 18px;
+    line-height: 36px;
+    color: #ffb007;
+    font-weight: normal;
+}
+#banner .download a{
+    display: block;
+    height: 54px;
+    margin-bottom: 5px;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#banner .download img{
+    width: 160px;
+}
+

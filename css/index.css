@@ -362,3 +362,23 @@
     width: 160px;
 }
 
+#banner .carousel{
+    width: 590px;
+}
+#banner .carouselInner{
+    width: 200%;
+}
+#banner .carouselIndicators{
+    right:17px;
+    bottom: 15px;
+}
+#banner .carouselIndicators span{
+    width: 20px;
+    height: 8px;
+    margin: 7px;
+}
+#banner .carouselIndicators span:hover,#banner .carouselIndicators span.active{
+    width: 40px;
+}
+
+

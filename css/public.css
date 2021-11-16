@@ -68,3 +68,18 @@ body{
     position: relative;
     overflow: hidden;
 }
+.carouselInner{
+    display: flex;
+    position: absolute;
+}
+.carouselIndicators{
+    display: flex;
+    position: absolute;
+}
+.carousel .carouselIndicators span{
+    cursor: pointer;
+    background: #fff;
+}
+.carouselIndicators span.active,.carouselIndicators span:hover{
+    background: #feb012;
+}

@@ -490,7 +490,7 @@ body{
 /* 适龄提示 end*/
 
 /* section2 */
-#section2 .left{
+#section2 .left, #section3 .movie{
     width: 790px;
 }
 
@@ -610,6 +610,17 @@ body{
     width: 90%;
     margin-bottom: 8px;
 }
+
+#section2 .publicHead li.more{
+    display: block;
+    padding-right: 0;
+}
+#section2 .publicHead li.more a{
+    background: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
 #section2 .skin.active ul li.active{
     color: #fec146;;
 }
@@ -887,9 +898,11 @@ body{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
     width: 71px;
     font-size: 12px;
     text-align: center;
+    margin-top: 4px;
 }
 #section2 .award .zb{
     position: absolute;
@@ -971,4 +984,66 @@ body{
     cursor: not-allowed;
 }
 
+/* section3 */
+#section3 .movie h3::before{
+    background-position: -60px 0;
+}
+#section3 .movie .publicHead li{
+    padding: 0 40px 4px;
+}
+#section3 .movie .publicHead li.more{
+    padding: 0  0 3px 30px;
+}
+#section3 .movie .tabContent.active{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#section3 .movie .tabContent li{
+    width: 249px;
+    margin-bottom: 7px;
+}
+#section3 .movie .tabContent li a{
+    display: block;
+    overflow: hidden;
+}
+#section3 .movie .tabContent li a:first-child{
+    height: 135px;
+    position: relative;
+}
+#section3 .movie .tabContent li a:nth-child(2){
+    font-size: 16px;
+    margin:4px 10px;
+    color: #3b3b3b;
 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+#section3 .movie .tabContent li a img{
+    width: 100%;
+}
+#section3 .movie .tabContent li a:first-child::before{
+    content: "";
+    width: 58px;
+    height: 58px;
+    background:url(../images/cont-spr.png) -145px -5px / 208px 126px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -29px;
+    margin-top: -29px;
+    transform: scale(5);
+    opacity: 0;
+    transition: 0.3s;
+}
+#section3 .movie .tabContent li:hover a:first-child::before{
+    transform: scale(1);
+    opacity: 1;
+}
+#section3 .movie .tabContent li:hover a:last-child{
+    color: #efa611;
+}
+#section3 .movie .tabContent li:hover{
+    background:#fff;
+}

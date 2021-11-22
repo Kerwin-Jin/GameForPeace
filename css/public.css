@@ -127,7 +127,7 @@ body{
 .scrollBar span{
     position: absolute;
     width: 100%;
-    height: 60px;
+    height: 100px;
     background: rgba(0, 0, 0, .5);
     border-radius: 4px;
     left: 0;
@@ -175,15 +175,7 @@ body{
     position: relative;
     cursor: pointer;
 }
-.publicHead li.more{
-    display: block;
-    padding-right: 0;
-}
-.publicHead li.more a{
-    background: none;
-    color: #000;
-    border-bottom: 1px solid #000;
-}
+
 .publicHead li.active,.publicHead li:not(:last-child):hover{
     color: #efa611;
     font-weight: bold;

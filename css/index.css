@@ -1047,3 +1047,89 @@ body{
 #section3 .movie .tabContent li:hover{
     background:#fff;
 }
+
+/* 热门排行 */
+#section3 .rank{
+    width: 370px;
+}
+
+#section3 .rank header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#section3 .rank h3{
+    height: 30px;
+    font-size: 24px;
+    color: #24262d;
+    display: flex;
+    align-items: center;
+}
+#section3 .rank h3::before{
+    content: "";
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+    background: url(../images/sprites.png) no-repeat -90px 0;
+}
+
+#section3 .rank ul{
+    display: flex;
+}
+#section3 .rank ul li{
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+#section3 .rank ul li:hover,#section3 .rank ul li.active{
+    color: #efa611;
+}
+#section3 .rank ol{
+    counter-reset: order;
+}
+
+#section3 .rank ol li{
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #d2d2d2;
+}
+#section3 .rank ol li::before{
+    counter-increment: order;
+}
+#section3 .rank ol li:last-child{
+    border-bottom: none;
+}
+#section3 .rank .first div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+#section3 .rank .first div a{
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#section3 .rank .first div p{
+    display: flex;
+    justify-content: space-between;
+}
+#section3 .rank .first div p span:nth-child(1){
+    display: flex;
+    align-items: center;
+}
+#section3 .rank .first div p span::before{
+    content: "";
+    width: 20px;
+    height: 17px;
+    margin-right: 5px;
+    background: url(../images/spr_icon.png);
+}
+#section3 .rank img{
+    width: 90px;
+}

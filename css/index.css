@@ -1091,45 +1091,93 @@ body{
 }
 
 #section3 .rank ol li{
-    height: 55px;
+    height: 53px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #d2d2d2;
 }
-#section3 .rank ol li::before{
-    counter-increment: order;
-}
 #section3 .rank ol li:last-child{
     border-bottom: none;
+}
+#section3 .rank ol li::before{
+    counter-increment: order;
+    content: counter(order);
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background: url(../images/sprites.png) no-repeat -120px -30px;
+    text-align: center;
+    line-height: 17px;
+    font-size: 14px;
+    color: #fff;
+}
+#section3 .rank ol li:first-child::before{
+    background-position: -45px -30px;
+}
+#section3 .rank ol li:nth-child(2)::before{
+    background-position: -70px -30px;
+}
+#section3 .rank ol li:nth-child(3)::before{
+    background-position: -95px -30px;
+}
+
+#section3 .rank ol li a{
+    color:#000;
+}
+#section3 .rank ol li a:hover {
+    color: #efa611;
+}
+#section3 .rank .first{
+    padding-bottom: 10px;
 }
 #section3 .rank .first div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 5px;
+    margin-left: 14px;
+    width: 240px;
+    height: 56px;
 }
 #section3 .rank .first div a{
-    width: 270px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 #section3 .rank .first div p{
     display: flex;
     justify-content: space-between;
+    color: #c9c9c9;
+    font-size: 14px;
 }
-#section3 .rank .first div p span:nth-child(1){
-    display: flex;
-    align-items: center;
+#section3 .rank .first div p span:nth-child(2){
+    width: 50%;
+    font-size: 16px;
+    text-align: right;
 }
-#section3 .rank .first div p span::before{
-    content: "";
-    width: 20px;
-    height: 17px;
-    margin-right: 5px;
-    background: url(../images/spr_icon.png);
-}
+/* ----------------- */
+
 #section3 .rank img{
     width: 90px;
+}
+
+#section3 .rank ol li>span:first-child{
+    width: 300px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+}
+#section3 .rank ol li>span:last-child{
+    font-size: 16px;
+    color: #c9c9c9;
+}
+#section3 .rank button{
+    width: 100%;
+    height: 42px;
+    background:#ddd;
+    color: #4b4b4b;
+    font-size: 18px;
 }

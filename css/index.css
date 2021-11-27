@@ -1313,3 +1313,108 @@ body{
     border-radius: 50%;
     margin-bottom: 10px;
  }
+
+ /* section6 */
+#section6{
+    padding:50px 0 140px;
+}
+
+
+#section6.box{
+    display: block;
+    margin: 0 auto;
+}
+#section6 h3{
+    height: 30px;
+    color: #24262d;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+#section6 h3::before{
+    content: "";
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    background:url(../images/cont-spr.png) no-repeat -139px -66px;
+}
+#section6 .carousel{
+    height: 620px;
+    margin-top: 30px;
+}
+#section6 .carousel .btn{
+    width: 60px;
+    height: 80px;
+    background:url(../images/sprites.png); 
+}
+#section6 .carousel .btn.prev{
+    background-position: -70px -180px;
+}
+#section6 .carousel .btn.next{
+    background-position: 0 -180px;
+}
+
+#footer1{
+    height: 370px;
+    padding:40px 0;
+    box-sizing: border-box;
+    background:url(../images/footer-bg-new.jpg) no-repeat center/cover;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+#footer1 ul{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#footer1 ul li{
+    cursor: pointer;
+    color: #999ea6;
+    margin: 0 45px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#footer1 ul li span{
+    width: 67px;
+    height: 67px;
+    text-align: center;
+    line-height: 67px;
+    border-radius: 50%;
+    font-size: 36px;
+    margin: 0 auto;
+    border:1px solid #999ea6;
+}
+#footer1 ul li div{
+    width: 136px;
+    height: 146px;
+    position: absolute;
+    top: -160px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    opacity: 0;
+    visibility: hidden;
+   
+    background:url(../images/footer-code-bg.png) no-repeat center/cover;
+    padding:8px 8px 0;
+    box-sizing: border-box;
+}
+#footer1 ul li:hover{
+    color: #dea42f;
+}
+#footer1 ul li:hover span{
+    border:1px solid #dea42f;
+}
+#footer1 ul li:hover div{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s linear;
+}
+#footer1 ul img{
+    width: 100%;
+}

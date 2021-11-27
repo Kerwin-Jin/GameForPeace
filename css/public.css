@@ -82,7 +82,19 @@ body{
 .carouselIndicators span.active,.carouselIndicators span:hover{
     background: #feb012;
 }
-
+.carousel .btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+.carousel .btn.prev{
+    left: 0;
+}
+.carousel .btn.next{
+    right: 0;
+}
 /* 选项卡公共样式 */
 .tabContent{
     display: none;
@@ -196,6 +208,15 @@ body{
 }
 
 
-
+/* 字体图标 */
+@font-face{
+    font-family: 'iconfont';
+    src: url(../font/iconfont.ttf) format('truetype');
+}
+.iconfont{
+    font-family: 'iconfont' !important;
+    font-size: 16px;
+    font-style: normal;
+}
 
 

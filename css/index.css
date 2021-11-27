@@ -1187,7 +1187,6 @@ body{
 /* 攻略中心 */
 #section4 .left{
     width: 435px;
-    padding-bottom: 24px;
 }
 #section4 .left .publicHead h3::before{
     background-position: -120px 0;
@@ -1256,3 +1255,61 @@ body{
 #section4 .right .tabContent.active li{
     background:#fff;
 }
+
+/* section5 */
+#section5{
+    width: 100%;
+    height: 500px;
+    background:#fff;
+}
+#section5 .box{
+    flex-direction: column;
+}
+#section5 .publicHead{
+    margin-top: 20px;
+    width: 100%;
+}
+#section5 .publicHead ul{
+    border-bottom: none;
+}
+#section5 .publicHead ul li{
+    padding-right: 0;
+}
+#section5 .photo{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+ }
+#section5 .photo li{
+    width: 120px;
+    height: 120px;
+    margin:47px 38px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ #section5 .photo li a{
+    color: #000;
+ }
+#section5 .photo li:hover::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background:url(../images/sprites.png) no-repeat 0 -55px;
+    top:-15px;
+    cursor: pointer;
+ }
+#section5 .photo li:hover a{
+    color: #fcc257;
+ }
+#section5 .photo li img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+ }

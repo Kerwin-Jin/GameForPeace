@@ -1,8 +1,5 @@
 @import url(public.css);
 
-body{
-    padding-bottom: 1000px;
-}
 /* header start */
 #top{
     height: 40px;
@@ -1157,7 +1154,6 @@ body{
     font-size: 16px;
     text-align: right;
 }
-/* ----------------- */
 
 #section3 .rank img{
     width: 90px;
@@ -1181,7 +1177,6 @@ body{
     color: #4b4b4b;
     font-size: 18px;
 }
-
 /* ------------------section4-------------*/
 
 /* 攻略中心 */
@@ -1396,7 +1391,7 @@ body{
     top: -160px;
     left: 50%;
     transform: translateX(-50%);
-    
+
     opacity: 0;
     visibility: hidden;
    
@@ -1417,4 +1412,114 @@ body{
 }
 #footer1 ul img{
     width: 100%;
+}
+
+/* footer2 */
+#footer2{
+    background:#000;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+#footer2 .container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 240px;
+    align-items: center;
+    justify-content: space-around;
+}
+#footer2 .container .logo a{
+    margin-right: 10px;
+}
+#footer2 .container .left ul{
+    width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+#footer2 .container .left ul li{
+    color: #fff;
+    margin:0 3px;
+}
+#footer2 .container .right p,#footer2 .container .right a{
+    color: #fff;
+}
+
+/* 侧边导航 */
+#sideNav{
+    width: 200px;
+    background:url(../images/slide-munu2.png) no-repeat center top;
+    position: fixed;
+    top: 25%;
+    right: 0;
+    padding-top: 180px;
+    z-index: 10;
+}
+#sideNav .toggleBtn{
+    width: 26px;
+    height: 82px;
+    background:url(../images/sq.png) no-repeat center;
+    position: absolute;
+    left: 9px;
+    top: 171px;
+    cursor: pointer;
+}
+#sideNav .downCode{
+    width: 120px;
+    height: 120px;
+    margin:3px 0 40px 51px;
+}
+#sideNav .codeWrap div{
+    width: 137px;
+    height: 169px;
+    margin: 0 0 3px 42px;
+    height: 0;
+    overflow: hidden;
+    transition: .2s;
+}
+
+#sideNav .codeWrap img{
+    width: 120px;
+    height: 120px;
+    margin: 10px 0 0 9px;
+}
+
+#sideNav .gzh div{
+    background:url(../images/slide-munu-gzh.png) no-repeat 0 0;
+}
+#sideNav .hpyd div{
+    background:url(../images/slide-munu-hpyd.png) no-repeat 0 0;
+}
+
+#sideNav .codeWrap span{
+    display: block;
+    width: 136px;
+    height: 41px;
+    margin: 0 0 3px 43px;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+#sideNav .gzh span{
+    background:url(../images/gzh-btn.png) no-repeat center/cover;
+}
+#sideNav .hpyd span{
+    background:url(../images/hpyd-btn.png) no-repeat center/cover;
+}
+#sideNav .wb span{
+    background:url(../images/wb-btn.png) no-repeat center/cover;
+}
+#sideNav .codeWrap span:hover + div{
+    height: 169px;
+}
+.disNone{
+    display: none;
+}
+.hidden{
+    transform: translateX(200px);
+}
+#sideNav.hidden .toggleBtn{
+    left: -26px;
+    background:url(../images/zk.png) no-repeat center;
 }

@@ -1181,3 +1181,78 @@ body{
     color: #4b4b4b;
     font-size: 18px;
 }
+
+/* ------------------section4-------------*/
+
+/* 攻略中心 */
+#section4 .left{
+    width: 435px;
+    padding-bottom: 24px;
+}
+#section4 .left .publicHead h3::before{
+    background-position: -120px 0;
+}
+#section4 .left .publicHead li{
+    padding:0 10px 3px;
+}
+#section4 .left .publicHead li.more{
+    padding-right: 0;
+}
+#section4 .tabContent.active{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#section4 .tabContent li{
+    width: 212px;
+    margin-bottom: 10px;
+}
+#section4 .tabContent li img{
+    width: 212px;
+    height: 126px;
+}
+
+#section4 .tabContent li a:nth-child(2){
+    font-size: 16px;
+    color: #3b3b3b;
+    padding: 10px 15px 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    overflow: hidden;
+}
+#section4 .tabContent li:hover{
+    background:#fff;
+}
+
+#section4 .tabContent li:hover a{
+    color: #fcc257;
+}
+#section4 .tabContent li p{
+    display: flex;
+    justify-content: space-between;
+    padding:0 15px 5px;
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+/* 精品栏目 */
+#section4 .right{
+    width: 725px;
+}
+
+#section4 .right .publicHead h3::before{
+    background-position: -150px 0;
+}
+#section4 .right .publicHead  li{
+    padding:0 25px 0;
+}
+#section4 .right .publicHead  li.more{
+    padding-right: 0;
+}
+
+#section4 .right .tabContent.active li{
+    background:#fff;
+}
